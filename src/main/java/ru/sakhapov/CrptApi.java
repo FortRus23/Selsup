@@ -36,7 +36,6 @@ public class CrptApi {
 
         rateLimiter.acquire();
 
-        // Формируем JSON тела запроса
         var body = new RequestBody(document, signature);
         String jsonBody = objectMapper.writeValueAsString(body);
 
